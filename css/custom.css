@@ -1,6 +1,7 @@
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
   color: #F2F2F2;
+  height: 100%;
 }
 
 a:link, a:visited {
@@ -17,7 +18,7 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav {
@@ -45,4 +46,31 @@ nav {
 #nav-title {
   font-family: 'Poiret One', cursive;
   font-size: 5vw;
+}
+
+#header-info {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#we-are-cambara {
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+#description {
+  width: 60%;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  #description {
+    width: 100%;
+  }
 }
