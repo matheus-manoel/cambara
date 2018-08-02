@@ -10,19 +10,20 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye|Open+Sans|Roboto:300,400" rel="stylesheet">
 
     <title>Cambará</title>
   </head>
   <body>
 
     <!-- Header -->
+    <span class="position-absolute trigger"></span>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container d-flex align-items-center">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img id="nav-logo" src="images/logo_sem_texto.png">
-            <span id="nav-title">cambará</span>
+            <span class="align-middle" id="nav-title">cambará</span>
           </a>
         
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto align-self-center">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">QUEM SOMOS</a>
               </li>
@@ -47,13 +48,41 @@
 
       <div class="container" id="header-info">
         <h3 id="we-are-cambara">SOMOS A CAMBARÁ.</h3>
-        <h2 id="description">Nós Contribuimos Para Uma Agricultura Mais Sustentável Através da Transformação de Resíduos.</h2>
+        <h2 id="description">Nós contribuimos para uma agricultura mais sustentável através da transformação de resíduos.</h2>
       </div>
 
     </header>
 
     <!-- Quem Somos -->
-    <section>
+    <section class="quem-somos">
+      <div class="container" id="quem-somos-info-1">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="images/experiencia.png" alt="Experiencia">
+          </div>
+          <div class="col-md-6">
+            <div id="info-container">
+              <h2 class="quem-somos-subtitle">Movidos pelo desejo de novos desafios.</h2>
+              <p class="quem-somos-text">Surgimos da experiência acumulada ao longo de mais  de 15 anos em produção e comercialização de fertilizantes orgânicos e do desejo de novos desafios, sempre com o compromisso de levar ao produtor uma fonte de matéria orgânica de alta qualidade.</p>
+              <a id="info-action-1" href="#">ENTRE EM CONTATO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="info-container-2">
+              <h2 class="quem-somos-subtitle" id="qualidade-subtitle">O máximo de qualidade é o mínimo que exigimos.</h2>
+              <p class="quem-somos-text">Utilizamos somente resíduos provenientes de agroindústria e indústria alimentícia, além de podas de árvores trituradas. Esses materiais são misturados e através do processo de compostagem são transformados em uma fonte de matéria orgânica de alta qualidade e altos teores de nutrientes.</p>
+              <a id="info-action-2" href="#">CONHEÇA NOSSO PRODUTO</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/seguranca.png" alt="Experiencia">
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Optional JavaScript -->
@@ -61,6 +90,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script>
+      (new IntersectionObserver(function(e,o){
+        if (e[0].intersectionRatio > 0){
+          document.documentElement.removeAttribute('class');
+        } else {
+          document.documentElement.setAttribute('class','stuck');
+        };
+      })).observe(document.querySelector('.trigger'));
+    </script>
  
   </body>
 </html>
