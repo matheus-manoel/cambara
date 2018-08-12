@@ -106,7 +106,6 @@ nav {
 }
 
 .quem-somos-subtitle {
-  font-family: 'Rye', cursive;
   font-size: 48px;
   margin-bottom: 46px;
 }
@@ -127,7 +126,7 @@ nav {
 }
 
 #qualidade-subtitle {
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .quem-somos-text {
@@ -216,13 +215,40 @@ footer {
   color: black;
 }
 
-#footer-info-text-1 {
+.center-justified {
+  margin: 0 auto;
   text-align: justify;
+  width: 30em;
+}
+
+#address {
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+#horario-funcionamento {
+  color: #828282;
 }
 
 #logo-footer {
   height: 100px;
   width: 100px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 20px 0 20px;
+}
+
+.footer-links a:link, .footer-links a:visited {
+  color: #4F4F4F !important;
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {

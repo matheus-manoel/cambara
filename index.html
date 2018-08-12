@@ -33,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">QUEM SOMOS</a>
+                <a class="nav-link" href="#quem-somos">QUEM SOMOS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">PRODUTO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTATO</a>
+                <a class="nav-link" href="#contato">CONTATO</a>
               </li>
             </ul>
           </div>
@@ -54,7 +54,7 @@
     </header>
 
     <!-- Quem Somos -->
-    <section class="quem-somos">
+    <section class="quem-somos" id="quem-somos">
       <div class="container" id="quem-somos-info-1">
         <div class="row">
           <div class="col-md-6 text-center">
@@ -92,7 +92,7 @@
     <section class="product">
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contato">
       <h2 id="contact-title">Vamos Trabalhar Juntos!</h2>
       <p id="contact-subtitle">PEÇA UM ORÇAMENTO, AGENDE UMA CONVERSA, OU APENAS MANDE UM OI.</p>
 
@@ -118,17 +118,20 @@
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-5 text-center">
-            <div>
-              <p id="footer-info-text-1">Rua Mudar o Nome, 321 - Piracicaba</br>
-              13560-198</br>
-              Horário de Funcionamento: 8:00 - 18:00</p>
-            </div>
+          <div class="col-md-5 d-flex justify-content-center">
+            <p id="address" class="align-self-center">Rua Mudar o Nome, 321 - Piracicaba</br>
+            13560-198</br>
+            <span id="horario-funcionamento">Horário de Funcionamento: 8:00 - 18:00</span></p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 d-flex justify-content-center">
             <img id="logo-footer" src="images/logo_footer.png">
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 d-flex align-items-center justify-content-center">
+            <ul class="footer-links">
+              <li><a href="#quem-somos">QUEM SOMOS</a></li>
+              <li><a href="#produto">PRODUTO</a></li>
+              <li><a href="#contato">CONTATO</a></li>
+            </ul>
           </div>
         </div>
       </div>
