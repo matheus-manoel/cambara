@@ -46,7 +46,7 @@
         </div>
       </nav>
 
-      <div class="container parallax-window" data-parallax="scroll" id="header-info">
+      <div class="container parallax-window slide" data-parallax="scroll" id="header-info">
         <h3 id="we-are-cambara">SOLO VIVO, PLANTA SAUDÁVEL!</h3>
         <h2 id="description">Nós contribuimos para uma agricultura mais sustentável através da transformação de resíduos.</h2>
       </div>
@@ -55,7 +55,7 @@
 
     <!-- Quem Somos -->
     <section class="quem-somos" id="quem-somos">
-      <div class="container" id="quem-somos-info-1">
+      <div class="container slideanim" id="quem-somos-info-1">
         <div class="row">
           <div class="col-md-6 text-center">
             <img src="images/card-experiencia.png" alt="Experiencia">
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container slideanim">
         <div class="row">
           <div class="col-md-6">
             <div id="info-container-2">
@@ -93,11 +93,13 @@
     </section>
 
     <section class="contact" id="contato">
-      <h2 id="contact-title">Vamos Trabalhar Juntos!</h2>
-      <p id="contact-subtitle">PEÇA UM ORÇAMENTO, AGENDE UMA CONVERSA, OU APENAS MANDE UM OI.</p>
+      <div class="slideanim">
+        <h2 id="contact-title">Vamos Trabalhar Juntos!</h2>
+        <p id="contact-subtitle">PEÇA UM ORÇAMENTO, AGENDE UMA CONVERSA, OU APENAS MANDE UM OI.</p>
+      </div>
 
       <div class="container-fluid">
-        <div class="row">
+        <div class="row slideanim">
           <div class="col-md-6" id="map-container">
             <iframe id="map" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJO51MT8ExxpQRHDTcEwDDDic&key=AIzaSyAzIylLUI8uk4XWKjHbbz4O_4nJzHMeTOc" allowfullscreen></iframe>
           </div>
@@ -154,6 +156,20 @@
           document.documentElement.setAttribute('class','stuck');
         };
       })).observe(document.querySelector('.trigger'));
+    </script>
+
+    <!-- Slide anim -->
+    <script>
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
     </script>
  
   </body>
