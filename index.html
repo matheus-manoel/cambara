@@ -18,7 +18,7 @@
 
     <!-- Header -->
     <span class="position-absolute trigger"></span>
-    <header>
+    <header class="parallax-window" data-parallax="scroll" data-image-src="images/header.png">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -46,7 +46,7 @@
         </div>
       </nav>
 
-      <div class="container" id="header-info">
+      <div class="container parallax-window" data-parallax="scroll" id="header-info">
         <h3 id="we-are-cambara">SOMOS A CAMBARÁ.</h3>
         <h2 id="description">Nós contribuimos para uma agricultura mais sustentável através da transformação de resíduos.</h2>
       </div>
@@ -85,11 +85,63 @@
       </div>
     </section>
 
+    <div class="container-liquid parallax-window" id="image-between" data-parallax="scroll" data-image-src="images/image-between.jpg">
+    </div>
+
+    <!-- Produto e Serviço -->
+    <section class="product">
+    </section>
+
+    <section class="contact">
+      <h2 id="contact-title">Vamos Trabalhar Juntos!</h2>
+      <p id="contact-subtitle">PEÇA UM ORÇAMENTO, AGENDE UMA CONVERSA, OU APENAS MANDE UM OI.</p>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6" id="map-container">
+            <iframe id="map" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJO51MT8ExxpQRHDTcEwDDDic&key=AIzaSyAzIylLUI8uk4XWKjHbbz4O_4nJzHMeTOc" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6 text-center">
+            <form action="" class="main-wrap">
+              <input placeholder="Nome *" type="text" class="line-field" />
+              <input placeholder="Email *" type="email" class="line-field" />
+              <input placeholder="Empresa ou Organização *" type="text" class="line-field" />
+              <input placeholder="Assunto *" type="text" class="line-field" />
+              <textarea placeholder="Mensagem" id="message-field"></textarea>
+              <button class="send-button pull-left">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 text-center">
+            <div>
+              <p id="footer-info-text-1">Rua Mudar o Nome, 321 - Piracicaba</br>
+              13560-198</br>
+              Horário de Funcionamento: 8:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <img id="logo-footer" src="images/logo_footer.png">
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/parallax.min.js"></script>
 
     <script>
       (new IntersectionObserver(function(e,o){
