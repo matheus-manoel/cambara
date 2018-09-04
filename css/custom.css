@@ -81,12 +81,26 @@ nav {
   text-align: justify;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 /* Quem Somos */
 
 .quem-somos {
-  background-color: #281916;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-color: #40291D;
 }
 
 #info-container {
@@ -143,26 +157,14 @@ nav {
 /* Product */
 
 .product {
-  height: 600px;
+  background-image: url("../images/background-product.png");
+  background-repeat: repeat;
 }
 
 /* Contact */
 
 .contact {
-  background-color: #281916;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-#contact-title {
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 0;
-}
-
-#contact-subtitle {
-  text-align: center;
-  margin-bottom: 50px;
+  background-color: #40291D;
 }
 
 #map-container {

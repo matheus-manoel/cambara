@@ -36,7 +36,7 @@
                 <a class="nav-link" href="#quem-somos">QUEM SOMOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PRODUTO</a>
+                <a class="nav-link" href="#">PRODUTOS E SERVIÇOS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contato">CONTATO</a>
@@ -55,6 +55,11 @@
 
     <!-- Quem Somos -->
     <section class="quem-somos" id="quem-somos">
+      <div class="slideanim">
+        <h2 class="section-title">Que Tal Nos Conhecer?</h2>
+        <p class="section-subtitle">SAIBA UM POUCO SOBRE NOSSOS VALORES E COMO FUNCIONAMOS.</p>
+      </div>
+
       <div class="container slideanim" id="quem-somos-info-1">
         <div class="row">
           <div class="col-md-6 text-center">
@@ -85,17 +90,31 @@
       </div>
     </section>
 
-    <div class="container-liquid parallax-window" id="image-between" data-parallax="scroll" data-image-src="images/image-between.jpg">
-    </div>
-
     <!-- Produto e Serviço -->
     <section class="product">
+      <div class="slideanim">
+        <h2 class="section-title">Conheça Nossos Produtos e Serviços!</h2>
+        <p class="section-subtitle">CONHEÇA OS LOTES DISPONÍVEIS E ENTRE EM CONTATO PARA MAIS INFORMAÇÕES.</p>
+      </div>
+
+      <div class="container-fluid slideanim">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="images/card-fertilizante.png" alt="Fertilizante">
+            <img src="images/lotes.png" alt="Lotes Disponíveis">
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/card-recepcao.png" alt="Recepção de Resíduos">
+            <img src="images/entrar-contato.png" alt="Entrar em Contato">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contato">
       <div class="slideanim">
-        <h2 id="contact-title">Vamos Trabalhar Juntos!</h2>
-        <p id="contact-subtitle">PEÇA UM ORÇAMENTO, AGENDE UMA CONVERSA, OU APENAS MANDE UM OI.</p>
+        <h2 class="section-title">Vamos Trabalhar Juntos!</h2>
+        <p class="section-subtitle">PEÇA UM ORÇAMENTO, AGENDE UMA CONVERSA, OU APENAS MANDE UM OI.</p>
       </div>
 
       <div class="container-fluid">
@@ -131,7 +150,7 @@
           <div class="col-md-5 d-flex align-items-center justify-content-center">
             <ul class="footer-links">
               <li><a href="#quem-somos">QUEM SOMOS</a></li>
-              <li><a href="#produto">PRODUTO</a></li>
+              <li><a href="#produto">PRODUTOS E SERVIÇOS</a></li>
               <li><a href="#contato">CONTATO</a></li>
             </ul>
           </div>
@@ -149,8 +168,7 @@
     <script src="js/parallax.min.js"></script>
 
     <script>
-      (new IntersectionObserver(function(e,o){
-        if (e[0].intersectionRatio > 0){
+      (new IntersectionObserver(function(e,o){ if (e[0].intersectionRatio > 0){
           document.documentElement.removeAttribute('class');
         } else {
           document.documentElement.setAttribute('class','stuck');
